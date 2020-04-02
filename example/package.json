@@ -4,10 +4,12 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "@blueprintjs/core": "3.24.0",
+    "blueprint-basit-tablo": "link:..",
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "link:../node_modules/react-scripts",
-    "blueprint-basit-tablo": "link:.."
+    "styled-components": "5.0.1"
   },
   "scripts": {
     "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
