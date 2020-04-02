@@ -4,24 +4,58 @@
 
 [![NPM](https://img.shields.io/npm/v/blueprint-basit-tablo.svg)](https://www.npmjs.com/package/blueprint-basit-tablo) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-## Install
+## Yükleme
 
+#### npm
 ```bash
 npm install --save blueprint-basit-tablo
 ```
 
-## Usage
+#### yarn
+```bash
+yarn add blueprint-basit-tablo
+```
+
+## Kullanım
+
+Blueprintjs gereksinimlerini sağlayın. [BlueprintJS Getting Started](https://blueprintjs.com/docs/#blueprint/getting-started)
+
+`columns` ve `items` prop'larına sütunları ve satırları verebilirsiniz. Sütunları verirken aşağıdaki üç şekildeki gibi kullanarak satırdan hücrenin nasıl çekileceğini de belirleyebilirsiniz. Satırda `id` sütunu olmasını tavsiye ederim. Yoksa index kullanılır.
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'blueprint-basit-tablo'
-import 'blueprint-basit-tablo/dist/index.css'
+import { Tablo } from 'blueprint-basit-tablo'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const sutunlar = [
+    'Ad',
+    {
+        title: 'Soyad',
+        accessor: 'soyadi'
+    },
+    {
+        title: 'Telefon',
+        accessor: hucre => '0312' + hucre.tel
+    }
+]
+
+const satirlar = [
+    {
+      id: 1,
+      ad: 'Hasan',
+      soyad: 'TEKGÜL',
+      telefon: '011011011',
+    },
+    {
+      id: 1,
+      ad: 'Mahmut',
+      soyad: 'TUNCER',
+      telefon: '011011011',
+    }
+]
+
+function App (props) {
+  return <Tablo columns={sutunlar} items={satirlar} />
 }
 ```
 
