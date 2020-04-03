@@ -41,15 +41,15 @@ import React from 'react'
 import { Tablo } from 'blueprint-basit-tablo'
 
 const sutunlar = [
-    'Ad',
+    'Ad', // başlık ve nesnedeki property aynı ise (item.ad)
     {
         title: 'Soyad',
         accessor: 'soyadi'
-    },
+    }, // başlık ve property farklı ise
     {
         title: 'Telefon',
         accessor: hucre => '0312' + hucre.tel
-    }
+    } // hucre içeriğini kendiniz de verilebilirsiniz. Ayrıca bileşen de verebilirsiniz
 ]
 
 const satirlar = [
