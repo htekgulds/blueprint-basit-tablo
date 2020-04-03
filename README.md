@@ -49,7 +49,7 @@ const sutunlar = [
     {
         title: 'Telefon',
         accessor: hucre => '0312' + hucre.tel
-    } // hucre içeriğini kendiniz de verilebilirsiniz. Ayrıca bileşen de verebilirsiniz
+    } // hucre içeriğini kendiniz de verebilirsiniz. Ayrıca bileşen de verebilirsiniz
 ]
 
 const satirlar = [
