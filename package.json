@@ -1,6 +1,6 @@
 {
   "name": "blueprint-basit-tablo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Blueprintjs Tabanlı Basit React Tablo Bileşeni",
   "author": "htekgulds",
   "license": "MIT",
@@ -24,8 +24,8 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0",
     "@blueprintjs/core": "^3.0.0",
+    "react": "^16.0.0",
     "styled-components": ">=4.0.0"
   },
   "devDependencies": {
