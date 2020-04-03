@@ -5,7 +5,7 @@
 [![NPM](https://img.shields.io/npm/v/blueprint-basit-tablo.svg)](https://www.npmjs.com/package/blueprint-basit-tablo) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Gereksinimler
-styeld-components ve blueprintjs kullandığı için önce bunlaarı yükleyin
+styled-components ve blueprintjs kullandığı için önce bunlaarı yükleyin
 
 #### npm
 ```bash
