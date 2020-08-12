@@ -61,8 +61,8 @@ const satirlar = [
     },
     {
       id: 1,
-      ad: 'Mahmut',
-      soyadi: 'TUNCER',
+      ad: 'Zeliha',
+      soyadi: 'TEKGÜL',
       tel: '011011011',
     }
 ]
